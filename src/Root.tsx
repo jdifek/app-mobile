@@ -8,6 +8,8 @@ import { Rangs } from './components/Rangs/Rangs';
 import { Bonus } from './components/Bonus/Bonus';
 import { Subscription } from './components/Subscription/Subscription';
 import { Hi } from './components/Hi/Hi';
+import Month from "./components/Subscription/Month";
+import Year from "./components/Subscription/Year";
 
 function Root() {
   return (
