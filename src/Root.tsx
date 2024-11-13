@@ -6,10 +6,10 @@ import { Profile } from './components/Profile/Profile';
 import { Library } from './components/Library/Library';
 import { Rangs } from './components/Rangs/Rangs';
 import { Bonus } from './components/Bonus/Bonus';
-import { Subscription } from './components/Subscription/Subscription';
+import { Subscription } from './components/Subs/Subscription';
 import { Hi } from './components/Hi/Hi';
-import Month from "./components/Subscription/Month";
-import Year from "./components/Subscription/Year";
+import Month from "./components/Subs/Month";
+import Year from "./components/Subs/Year";
 
 function Root() {
   return (
