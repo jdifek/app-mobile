@@ -1,0 +1,14 @@
+<svg width="42.000000" height="42.000000" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<radialGradient gradientTransform="translate(34.02 37.8) rotate(-123.851) scale(41.4696 42.1222)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_610_32_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#67C6FF"/>
+			<stop offset="0.638370" stop-color="#127CF1"/>
+			<stop offset="1.000000" stop-color="#1076E5"/>
+		</radialGradient>
+	</defs>
+	<rect id="Frame 313" rx="20.650000" width="41.299999" height="41.299999" transform="translate(0.350000 0.350000)" fill="url(#paint_radial_610_32_0)" fill-opacity="1.000000"/>
+	<path id="Intersect" d="M28 15.46C28 13.51 27.21 11.74 25.95 10.46C24.68 9.19 22.93 8.4 21 8.4C19.06 8.4 17.31 9.19 16.04 10.46C14.78 11.74 14 13.51 14 15.46C14 17.41 14.78 19.17 16.04 20.45C17.31 21.72 19.06 22.52 21 22.52C22.93 22.52 24.68 21.72 25.95 20.45C26.6 19.79 27.11 19.01 27.46 18.16C27.82 17.3 28 16.38 28 15.46ZM21 33.59C24.1 33.59 26.98 32.63 29.37 30.97C29.39 30.91 29.4 30.84 29.4 30.77C29.4 27.95 26.1 25.12 21 25.12C15.75 25.12 12.6 27.95 12.6 30.77C12.6 30.84 12.6 30.91 12.62 30.97C15.01 32.63 17.89 33.59 21 33.59Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
