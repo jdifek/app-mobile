@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ['Nunito', 'sans-serif'], // Use Nunito as the default font
+        nunito: ['Nunito', 'sans-serif'],
       },
       gap:{
         '666':'7px',
