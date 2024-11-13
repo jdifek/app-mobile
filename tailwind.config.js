@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
+        pacifico: ['Pacifico', 'serif']
       },
       gap:{
         '666':'7px',
