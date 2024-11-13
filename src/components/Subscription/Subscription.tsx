@@ -1,57 +1,62 @@
+import React from "react"
+import Ellipse from "../../assets/images/Ellipse";
+import Month from "./Month";
+import Year from "./Year";
+
 export const Subscription = () => {
-  return (
-    <div className="w-full h-screen">
-      <div
-        className="px-[55px] py-[35px] w-full h-[40vh] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-none rounded-br-none absolute bottom-0 flex flex-col items-center justify-center bg-gradient-to-b from-[#6ec1e4] to-[#b3e5fc]"
-        style={{
-          background:
-            "radial-gradient(119.41% 109.58% at 96.62% 100%, rgb(103, 198, 255) 0%, rgb(18, 124, 241) 63.837021589279175%, rgb(16, 118, 229) 100%)",
-        }}
-      >
-        <h1
-          className="text-white text-center text-[24px] leading-[150%] tracking-[0.02em] font-semibold"
-          style={{ fontFamily: "var(--font-family)" }}
-        >
-          Подпишись на канал «Слушай Сказку»
-        </h1>
 
-        <div className="flex flex-col gap-4 mt-4">
-          <button
-            className="text-white text-center text-[16px] font-semibold"
-            style={{ fontFamily: "var(--font-family)" }}
-          >
-            Перейти в канал
-          </button>
 
-          <button
-            className="text-[#1b405a] text-center text-[20px] font-semibold"
-            style={{ fontFamily: "var(--font-family)" }}
-          >
-            Проверить и получить бонусы
-          </button>
+    const [activeButton, setActiveButton] = React.useState<number>(1)
+
+    return (
+        <div className="bg-[#9BD3FF]  font-nunito">
+            <div className="bg-[#9BD3FF]">
+                <img src="/img/Frame.svg" alt=""
+                     className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6"/>
+            </div>
+            <div className="pt-64 ">
+                <div
+                    className={'mx-auto md:shadow-xl shadow-lg relative bg-[#FFFFFF] w-[370px] rounded-2xl '}>
+                    <div className={'flex gap-666 text-sm justify-center pt-4 pb-6 leading-9'}>
+                        <button
+                            className={`rounded-full border border-2 px-4 border-stroke-text ${activeButton === 1 ? 'text-white bg-stroke-text' : 'bg-white'} `}
+                            onClick={() => {
+                                setActiveButton(1)
+                            }}
+                        >
+                            Пописка на месяц
+                        </button>
+                        <button
+                            onClick={() => {
+                                setActiveButton(2)
+                            }}
+                            className={`rounded-full border border-2 px-4 border-stroke-text ${activeButton === 2 ? ' text-white bg-stroke-text' : 'bg-white'} `}>
+                            Подписка на год
+                        </button>
+                    </div>
+                    <div
+                        className={' py-1.5 md:shadow-xl shadow-lg rounded-full bg-[#83BDF9] text-white mx-3.5 text-2xl leading-47 text-center'}>Ежемесячная
+                        подписка
+                    </div>
+                    <div
+                        className={`transition-opacity duration-400 ${activeButton === 1 ? 'opacity-100' : 'opacity-0'}`}>
+                        {activeButton === 1 && (<Month/>)}
+                    </div>
+                    <div
+                        className={`transition-opacity duration-400 ${activeButton === 2 ? 'opacity-100' : 'opacity-0'}`}>
+                        {activeButton === 2 && <Year/>}
+                    </div>
+                    <button
+                        className={'-bottom-9 leading-9 font-semibold bg-gradient-to-r from-stroke-blue to-stroke-text absolute inset-x-0 mx-20 rounded-full py-4 text-white text-2xl'}>
+                        Оформить
+                    </button>
+                </div>
+                <p className={'text-sm w-[370px] mx-auto pt-20 text-center text-[#0C6BC5]'}>*Приобретая подписку, вы
+                    помогаете детям с иммунодефицитом, подопечным фонда “Подсолнух”</p>
+            </div>
+
+
         </div>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-// export const Subscription = () => {
-//   return (
-//     <div
-//       className="px-[55px] py-[35px] w-full h-[30vh] rounded-tl-[20px] rounded-tr-[20px] rounded-bl-none rounded-br-none absolute bottom-0 flex flex-col items-center justify-center"
-//     >
-//       <h1
-//         style={{ fontFamily: "var(--font-family)" }}
-//         className="text-white text-center text-[24px] leading-[196%] tracking-[0.02em] font-semibold"
-//         >
-//         Вам начислены бонусы
-//       </h1>
-//       <h2
-//         style={{ fontFamily: "var(--font-family)" }}
-//         className="text-white text-center text-[20px] font-bold"
-//         >
-//         +200 монет
-//       </h2>
-//     </div>
-//   );
-// };
