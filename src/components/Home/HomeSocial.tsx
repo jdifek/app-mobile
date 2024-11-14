@@ -57,9 +57,9 @@ const HomeSocial: React.FC<HomeSocialProps> = ({ className }) => {
       >
         {socials.map((item, index) => (
           <HomeListItem key={index} className="relative overflow-hidden">
-            <Link target="__blank" className="font-semibold text-xl flex items-center pl-7 w-full h-full" to={item.link}>
+            <Link target="__blank" className="font-semibold text-lg max-[380px]:text-base flex items-center pl-7 w-full h-full" to={item.link}>
                 <span>{item.title}</span>
-                <img src={item.iconUrl} alt={item.title} className="absolute -right-2 w-[100px] top-1/2 -translate-y-1/2" />
+                <img src={item.iconUrl} alt={item.title} className="absolute -right-2 w-[100px] max-[380px]:w-[70px] top-1/2 -translate-y-1/2" />
             </Link>
           </HomeListItem>
         ))}
