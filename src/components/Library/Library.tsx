@@ -5,8 +5,9 @@ export const Library = () => {
   return (
     <>
       <div className="px-[30px] py-[60px] w-full h-full min-h-screen pb-[200px]">
-        {/* Основной контент */}
-        <img className="mx-auto" src="./img/Library-first.svg" />
+        <div className="flex justify-center items-center bg-gradient-to-b from-[#3BA4FF] to-[#007BFF] rounded-[16px] h-[185px] mb-[100px]">
+          <img src="./img/triagle-library.svg" alt="" />
+        </div>
         <div className="flex flex-col gap-5">
           {[1, 2, 3, 4].map((el) => (
             <button
