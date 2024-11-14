@@ -2,6 +2,7 @@ import React from "react"
 import Ellipse from "../../assets/images/Ellipse";
 import Month from "./Month";
 import Year from "./Year";
+import {Footer} from "../Footer";
 
 export const Subscription = () => {
 
@@ -9,7 +10,7 @@ export const Subscription = () => {
     const [activeButton, setActiveButton] = React.useState<number>(1)
 
     return (
-        <div className="bg-[#9BD3FF]  font-nunito">
+        <div className="bg-[#9BD3FF]  font-nunito pb-48">
             <div className="bg-[#9BD3FF]">
                 <img src="/img/Frame.svg" alt=""
                      className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6"/>
@@ -55,7 +56,7 @@ export const Subscription = () => {
                     помогаете детям с иммунодефицитом, подопечным фонда “Подсолнух”</p>
             </div>
 
-
+            <Footer/>
         </div>
     )
 }

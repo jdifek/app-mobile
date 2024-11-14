@@ -22,6 +22,9 @@ export default {
       },
       padding:{
         '150px':'50px'
+      },
+      spacing:{
+        '9px':'9px'
       }
     },
   },
