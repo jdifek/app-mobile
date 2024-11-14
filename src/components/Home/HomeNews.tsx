@@ -8,7 +8,7 @@ interface HomeNewsProps {
 const HomeNews: React.FC<HomeNewsProps> = ({ className }) => {
   return (
     <div
-      className={`w-full h-screen p-[55px_30px_170px_30px] font-nunito ${className}`}
+      className={`w-full h-full p-[55px_30px_170px_30px] font-nunito ${className}`}
     >
       <ul className="flex flex-col items-center gap-5">
         <HomeBookCard
