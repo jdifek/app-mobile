@@ -6,7 +6,7 @@ interface HomeSocialProps {
 
 const HomeSocial: React.FC<HomeSocialProps> = ({className}) => {
     return (
-        <div className={`w-full h-screen ${className}`}>
+        <div className={`w-full h-screen ${className} font-rosarium`}>
             Наши соцсети
             <Footer />
         </div>
