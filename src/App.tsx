@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import { useEffect } from "react";
+import { authService } from "./services/auth/auth.service";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,9 @@ function App() {
       tgWebApp.MainButton.onClick(() => {
         tgWebApp.close();
       });
+
+      console.log(initData);
+      // authService.auth({email: initData})
     } else {
       console.error("Telegram Web App не поддерживается.");
     }
