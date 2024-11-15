@@ -12,8 +12,8 @@ export const Subscription = () => {
     return (
         <div className="bg-[#9BD3FF]  font-nunito pb-48">
             <div className="bg-[#9BD3FF]">
-                <img src="/img/Frame.svg" alt=""
-                     className="absolute left-1/2 transform -translate-x-1/2 -translate-y-6"/>
+                <img src="/img/Group%202085653804.svg" alt=""
+                     className="absolute left-1/2 transform -translate-x-1/2 -translate-y-0 pt-7"/>
             </div>
             <div className="pt-64 ">
                 <div
