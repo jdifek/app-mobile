@@ -15,6 +15,7 @@ import { PlusAssigments } from "./components/Assignments/PlusAssigments";
 import MarketBonuses from "./components/Bonus/elements/Market/MarketBonuses";
 import Referalka from "./components/Bonus/elements/Referalka/Referalka";
 import Game from "./components/Bonus/elements/Game";
+import { ListenToASychewa } from './components/Assignments/ListenToASychewa';
 
 function Root() {
   return (
@@ -37,6 +38,7 @@ function Root() {
         <Route path="/subscription" element={<Subscription />} />
         <Route path="/hi" element={<Hi />} />
         <Route path="/listen-tale" element={<ListenToAFairyTale />} />
+        <Route path="/listen-sychewa" element={<ListenToASychewa />} />
         <Route path="/plus-assigments" element={<PlusAssigments />} />
       </Routes>
     </Router>
