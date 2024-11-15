@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Footer } from "../Footer";
 
 export const Profile = () => {
@@ -31,7 +32,7 @@ export const Profile = () => {
             }}
           />
 
-          <div className="flex justify-between">
+          <Link to='/bonus-market' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653794.svg" alt="" />
               <h2 className="semi-bold text-[14px] leading-[111%] text-[#0c6bc5]">
@@ -39,7 +40,7 @@ export const Profile = () => {
               </h2>
             </div>
             <img src="./img/Profile-strelka.svg" alt="" />
-          </div>
+          </Link>
 
           <div
             style={{
@@ -75,7 +76,7 @@ export const Profile = () => {
             }}
           />
 
-          <div className="flex justify-between">
+          <Link to='/subscription' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653801.svg" alt="" />
               <h2 className="semi-bold text-[14px] leading-[111%] text-[#0c6bc5]">
@@ -83,7 +84,7 @@ export const Profile = () => {
               </h2>
             </div>
             <img src="./img/Profile-strelka.svg" alt="" />
-          </div>
+          </Link>
 
           <div
             style={{
@@ -121,18 +122,17 @@ export const Profile = () => {
             }}
           />
 
-          <div className="flex justify-between">
+          <Link to='/about' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653815.svg" alt="" />
               <h2
                 className="semi-bold text-[14px] leading-[111%] text-[#0c6bc5]"
-                style={{ fontFamily: "var(--)" }}
               >
                 О приложении
               </h2>
             </div>
             <img src="./img/Profile-strelka.svg" alt="" />
-          </div>
+          </Link>
 
           <div
             style={{
