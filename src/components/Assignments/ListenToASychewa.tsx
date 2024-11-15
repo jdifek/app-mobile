@@ -1,4 +1,4 @@
-export const ListenToAFairyTale = () => {
+export const ListenToASychewa = () => {
   return (
     <div className="w-full h-screen">
       <div
@@ -9,7 +9,7 @@ export const ListenToAFairyTale = () => {
         }}
       >
         <h1 className="text-white text-center text-[24px] leading-[150%] tracking-[0.02em] font-semibold">
-          Подпишись на канал <br></br> «Слушай Сказку»
+          Подпишись на канал <br></br> «o.sychewa»
         </h1>
 
         <div className="flex flex-col gap-4 mt-4">
