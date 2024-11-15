@@ -54,7 +54,7 @@ export const Profile = () => {
             }}
           />
 
-          <div className="flex justify-between">
+          <Link to='/library' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653799.svg" alt="" />
               <h2 className="semi-bold text-[14px] leading-[111%] text-[#0c6bc5]">
@@ -62,7 +62,7 @@ export const Profile = () => {
               </h2>
             </div>
             <img src="./img/Profile-strelka.svg" alt="" />
-          </div>
+          </Link>
 
           <div
             style={{
@@ -98,7 +98,7 @@ export const Profile = () => {
             }}
           />
 
-          <div className="flex justify-between">
+          <Link to='/about' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653803.svg" alt="" />
               <h2
@@ -108,7 +108,7 @@ export const Profile = () => {
               </h2>
             </div>
             <img src="./img/Profile-strelka.svg" alt="" />
-          </div>
+          </Link>
 
           <div
             style={{
