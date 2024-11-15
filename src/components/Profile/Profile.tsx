@@ -98,7 +98,7 @@ export const Profile = () => {
             }}
           />
 
-          <Link to='/about' className="flex justify-between">
+          <Link to='https://t.me/carelistenfairytale' className="flex justify-between">
             <div className="flex items-center gap-x-[16px]">
               <img src="./img/Group 2085653803.svg" alt="" />
               <h2
