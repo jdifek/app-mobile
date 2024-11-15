@@ -18,7 +18,7 @@ export const Footer = () => {
           </p>
         </Link>
 
-        <Link to='/bonus' className="flex flex-col items-center">
+        <Link to='/bonus-market' className="flex flex-col items-center">
           <img className="w-[48px] h-[48px]" src="./img/Frame 312.svg" alt="" />
           <p className="text-black text-[12px] leading-[167%] font-medium">
             Бонусы
