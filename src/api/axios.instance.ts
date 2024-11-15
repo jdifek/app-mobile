@@ -6,6 +6,7 @@ import {
 import Cookies from "js-cookie";
 import { Token } from "../types/enums";
 import { getContentType } from "./axios.helper";
+import { authService } from "../services/auth/auth.service";
 
 export const API_URL = process.env.API_URL;
 
@@ -36,7 +37,7 @@ axiosWithAuth.interceptors.response.use(
     ) {
       originalRequest._isRetry = true;
       try {
-        // await authService.getNewTokens();
+        await authService.refresh();
         return axiosWithAuth.request(originalRequest);
       } catch (error) {
         removeFromStorage();
