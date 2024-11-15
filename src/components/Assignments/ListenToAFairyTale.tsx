@@ -19,6 +19,9 @@ export const ListenToAFairyTale = () => {
           >
             Перейти в канал
           </button>
+          <button className="text-[#1b405a] text-center text-[20px] font-semibold bg-white border rounded-full px-6 py-2">
+            Проверить и получить бонусы
+          </button>
         </div>
       </div>
     </div>
