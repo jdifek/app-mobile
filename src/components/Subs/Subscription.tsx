@@ -1,5 +1,4 @@
 import React from "react"
-import Ellipse from "../../assets/images/Ellipse";
 import Month from "./Month";
 import Year from "./Year";
 import {Footer} from "../Footer";
