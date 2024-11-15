@@ -1,28 +1,28 @@
 import { useEffect, useState } from "react";
 import { Footer } from "../Footer";
 import HomeBookCard from "./HomeBookCard";
-import { fetchAudiobooks } from "../../api/axios.books";
+import { audiobookService } from "../../api/axios.books";
 
 interface HomeNewsProps {
   className?: string;
 }
 
 const HomeNews: React.FC<HomeNewsProps> = ({ className }) => {
-
   const [audiobooks, setAudiobooks] = useState([]);
   const [error, setError] = useState<null | string>(null);
 
   useEffect(() => {
-    const loadAudiobooks = async () => {
+    const fetchAudiobooks = async () => {
       try {
-        const data = await fetchAudiobooks();
-        setAudiobooks(data);
-      } catch (err) {
-        setError('Не удалось загрузить аудиокниги');
+        const data = await audiobookService.getAll(); // запрашиваем аудиокниги
+        setAudiobooks(data); // обновляем состояние с аудиокнигами
+      } catch (error) {
+        setError("Не удалось загрузить аудиокниги"); // если произошла ошибка, сохраняем сообщение об ошибке
       }
     };
-    loadAudiobooks();
-  }, []);
+
+    fetchAudiobooks(); // вызываем функцию для получения аудиокниг
+  }, []); // пустой массив зависимостей, чтобы запрос выпол
   return (
     <div
       className={`w-full h-full p-[55px_30px_170px_30px] font-nunito ${className}`}
